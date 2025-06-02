@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo's Pizza</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="bunny.ico">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="menu-hamburguesa-tocar">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu">
+                <a href="/"><img src="casa-icono-silueta.png" alt="Inicio">Inicio</a>
+                <a href="menu.html"><img src="menu.png" alt="Menú">Menú</a>
+                <a href="Sobre.html"><img src="sobre-nosotros.png" alt="Sobre nosotros">Sobre nosotros</a>
+                <a href="Reserva.html"><img src="reserva.png" alt="Reservas">Reservas</a>
+            </div>
+        </div>
+    </nav>
+    <main> 
+        <div class="margen-nav"></div>
+        <div class="contenedor-padre">
+          <h1>Reserva en Novo's Pizza</h1>
+          <form class="formulario">
+
+            <div class="parte-uno"> 
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+        
+            <div class="parte-dos"> 
+                <label for="personas">Número de personas:</label>
+                <select id="personas" name="personas" required>
+                    <option value="" disabled selected>Selecciona</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 personas</option>
+                    <option value="6">6 personas</option>
+                    <option value="7">7 personas</option>
+                    <option value="8">8 personas</option>
+                    <option value="9">9 personas</option>
+                    <option value="10+">Más de 10 personas</option>
+                </select>
+        
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+        
+                <label for="hora">Horario:</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+        
+            <div class="form-derecha">
+                <label class="label-con-input">
+                    <input type="checkbox" name="acepto" required/>
+                    Acepto términos y condiciones
+                </label>
+                <button  class="enviar shine" type="submit">Reservar</button>
+            </div>
+        
+        </form>
+        </div>
+      </main>
+    <div id="ventana-reserva" class="ventana">
+        <div class="contenido-ventana">
+            <h2>Tu reserva en Novo's Pizza ha sido registrada</h2>
+            <p id="mensaje-reserva"></p>
+            <button id="cerrar-ventana">Hecho</button>
+        </div>
+    </div>
+    <footer>
+        <section class="redesociales">
+            <img src="insta.png" alt="">
+            <img src="face.png" alt="">
+            <img src="whats.png" alt="">
+            <img src="telefono.png" alt="">
+        </section>
+        <section class="extra">
+            <p>Politicas de Privacidad</p>
+            <p>Terminos de Servicio</p>
+            <p>Copyright</p>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
